@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Clone in JavaScript</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="sidebar" id="sidebar">
+    <span id="close-sidebar" class="material-symbols-rounded">clear</span>
+    <h2>ChatGPT</h2>
+    <div class="conversation">
+      <div class="chat incoming">
+        <p>Merhaba! Size nasıl yardımcı olabilirim?</p>
+      </div>
+      <div class="chat outgoing">
+        <p>ChatGPT hata yapabilir.</p>
+      </div>
+      <!-- More chat elements can be added here -->
+    </div>
+  </div>
+  
+  <button id="sidebar-toggle" class="material-symbols-rounded">menu</button>
+
+  <!-- Chats container -->
+  <div class="chat-container"></div>
+    
+  <!-- Typing container -->
+  <div class="typing-container">
+    <div class="typing-content">
+      <div class="typing-textarea">
+        <textarea id="chat-input" spellcheck="false" placeholder="Message ChatGPT..." required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+      <div class="typing-controls">
+        <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+        <span id="delete-btn" class="material-symbols-rounded">delete</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
